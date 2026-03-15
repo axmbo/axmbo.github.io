@@ -47,25 +47,34 @@
             padding: 10px 20px;
             margin: 5px;
             color: #ffffff;
-            background-color: #238636; /* Verde GitHub */
             text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
             transition: background-color 0.2s;
         }
 
-        /* Cor do botão ao passar o mouse */
-        .btn:hover {
+        /* Botão do GitHub (Verde) */
+        .btn-github {
+            background-color: #238636; 
+        }
+        .btn-github:hover {
             background-color: #2ea043;
         }
 
-        /* Botão secundário (E-mail) */
+        /* NOVO: Botão do GitLab (Laranja) */
+        .btn-gitlab {
+            background-color: #fc6d26; /* Cor oficial principal do GitLab */
+        }
+        .btn-gitlab:hover {
+            background-color: #e24329; /* Cor um pouco mais escura ao passar o mouse */
+        }
+
+        /* Botão de E-mail (Contorno) */
         .btn-outline {
             background-color: transparent;
             border: 1px solid #8b949e;
             color: #c9d1d9;
         }
-
         .btn-outline:hover {
             background-color: #30363d;
         }
@@ -78,12 +87,14 @@
         <h2>Desenvolvedor & Open-Source</h2>
         <p>
             Olá! Este é o meu espaço focado em construir e contribuir com projetos open-source. 
-            Sinta-se à vontade para explorar os meus repositórios ou entrar em contato.
+            Abaixo você encontra os meus repositórios nas principais plataformas.
         </p>
         
-        <a href="https://github.com/axmbo" target="_blank" class="btn">Meu Perfil no GitHub</a>
+        <a href="https://github.com/axmbo" target="_blank" class="btn btn-github">GitHub</a>
         
-        <a href="mailto:contact@axmbo.dev" class="btn btn-outline">contact@axmbo.dev</a>
+        <a href="https://gitlab.com/acl1970" target="_blank" class="btn btn-gitlab">GitLab</a>
+        
+        <br><br> <a href="mailto:contact@axmbo.dev" class="btn btn-outline">contact@axmbo.dev</a>
     </div>
 
 </body>
