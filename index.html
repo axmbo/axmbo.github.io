@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>axmbo | Open Source Developer</title>
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        /* Define as cores e fontes do site inteiro */
         body {
-            background-color: #0d1117; /* Cor de fundo escura, parecida com o GitHub */
-            color: #c9d1d9; /* Cor do texto clara */
+            background-color: #0d1117;
+            color: #c9d1d9;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             justify-content: center;
@@ -19,7 +20,6 @@
             text-align: center;
         }
 
-        /* Estilo da caixa de conteúdo central */
         .container {
             max-width: 600px;
             padding: 40px;
@@ -29,21 +29,22 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
 
-        /* Estilo do seu nome */
         h1 {
-            color: #58a6ff; /* Azul característico de links para devs */
+            color: #58a6ff;
             margin-bottom: 10px;
         }
 
-        /* Estilo do texto descritivo */
         p {
             line-height: 1.6;
             margin-bottom: 30px;
         }
 
-        /* Estilo dos botões */
+        /* Atualizamos o botão para alinhar o ícone e o texto lado a lado */
         .btn {
-            display: inline-block;
+            display: inline-flex; /* Transforma o botão num container flexível */
+            align-items: center;  /* Centraliza o ícone e o texto na mesma linha */
+            justify-content: center;
+            gap: 8px; /* Dá um pequeno espaço de 8 pixels entre o ícone e o texto */
             padding: 10px 20px;
             margin: 5px;
             color: #ffffff;
@@ -53,31 +54,18 @@
             transition: background-color 0.2s;
         }
 
-        /* Botão do GitHub (Verde) */
-        .btn-github {
-            background-color: #238636; 
-        }
-        .btn-github:hover {
-            background-color: #2ea043;
-        }
+        .btn-github { background-color: #238636; }
+        .btn-github:hover { background-color: #2ea043; }
 
-        /* NOVO: Botão do GitLab (Laranja) */
-        .btn-gitlab {
-            background-color: #fc6d26; /* Cor oficial principal do GitLab */
-        }
-        .btn-gitlab:hover {
-            background-color: #e24329; /* Cor um pouco mais escura ao passar o mouse */
-        }
+        .btn-gitlab { background-color: #fc6d26; }
+        .btn-gitlab:hover { background-color: #e24329; }
 
-        /* Botão de E-mail (Contorno) */
         .btn-outline {
             background-color: transparent;
             border: 1px solid #8b949e;
             color: #c9d1d9;
         }
-        .btn-outline:hover {
-            background-color: #30363d;
-        }
+        .btn-outline:hover { background-color: #30363d; }
     </style>
 </head>
 <body>
@@ -86,15 +74,23 @@
         <h1>axmbo.dev</h1>
         <h2>Desenvolvedor & Open-Source</h2>
         <p>
-            Olá! Este é o meu espaço focado em construir e contribuir com projetos open-source. 
+            Olá! Este é o meu espaço focado em construir e contribuir com projetos open-source.
             Abaixo você encontra os meus repositórios nas principais plataformas.
         </p>
-        
-        <a href="https://github.com/axmbo" target="_blank" class="btn btn-github">GitHub</a>
-        
-        <a href="https://gitlab.com/acl1970" target="_blank" class="btn btn-gitlab">GitLab</a>
-        
-        <br><br> <a href="mailto:contact@axmbo.dev" class="btn btn-outline">contact@axmbo.dev</a>
+
+        <a href="https://github.com/axmbo" target="_blank" class="btn btn-github">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+
+        <a href="https://gitlab.com/acl1970" target="_blank" class="btn btn-gitlab">
+            <i class="fab fa-gitlab"></i> GitLab
+        </a>
+
+        <br><br>
+
+        <a href="mailto:contact@axmbo.dev" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> contact@axmbo.dev
+        </a>
     </div>
 
 </body>
