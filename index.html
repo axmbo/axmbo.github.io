@@ -68,6 +68,42 @@
             color: #c9d1d9;
         }
         .btn-outline:hover { background-color: #30363d; }
+
+        .projects {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px;
+            text-align: left;
+        }
+
+        .project {
+            display: block;
+            padding: 14px 16px;
+            margin-bottom: 10px;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+        .project:hover {
+            border-color: #58a6ff;
+            background-color: #1c2128;
+        }
+
+        .project-name {
+            color: #58a6ff;
+            font-weight: bold;
+        }
+        .project-name i { margin-right: 6px; }
+
+        .project-desc {
+            display: block;
+            margin-top: 4px;
+            font-size: 0.9em;
+            color: #8b949e;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body>
@@ -77,8 +113,30 @@
         <h2>Desenvolvedor & Open-Source</h2>
         <p>
             Olá! Este é o meu espaço focado em construir e contribuir com projetos open-source.
-            Abaixo você encontra os meus repositórios nas principais plataformas.
+            Abaixo, alguns dos meus projetos e os meus repositórios nas principais plataformas.
         </p>
+
+        <ul class="projects">
+            <li>
+                <a href="https://github.com/axmbo/git-alias" target="_blank" class="project">
+                    <span class="project-name"><i class="fas fa-code-branch"></i>git-alias</span>
+                    <span class="project-desc">
+                        Subcomando <code>git alias</code> para criar, listar, exportar,
+                        importar e sincronizar aliases do Git pela linha de comando,
+                        versionados como um arquivo de config legível.
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/axmbo/pestto" target="_blank" class="project">
+                    <span class="project-name"><i class="fab fa-whatsapp"></i>pestto</span>
+                    <span class="project-desc">
+                        Extensão minimalista que converte Markdown automaticamente ao
+                        colar texto no WhatsApp Web — útil para respostas de LLMs.
+                    </span>
+                </a>
+            </li>
+        </ul>
 
         <a href="https://github.com/axmbo" target="_blank" class="btn btn-github">
             <i class="fab fa-github"></i> GitHub
